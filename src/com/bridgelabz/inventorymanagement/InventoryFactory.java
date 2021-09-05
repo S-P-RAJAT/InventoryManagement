@@ -14,11 +14,13 @@ public class InventoryFactory {
 		int count = scanner.nextInt();
 		
 		for (int index = 0; index < count; index++) {
-			System.out.println("Enter the name of Inventory");
+			System.out.println("Enter the name of Inventory:");
 			String name = scanner.next();
-			System.out.println("Enter weight in kg");
+			
+			System.out.println("Enter weight in kg:");
 			double weight = scanner.nextDouble();
-			System.out.println("Enter the price per kg");
+			
+			System.out.println("Enter the price per kg:");
 			double price = scanner.nextDouble();
 			Inventory newInventory = new Inventory(name, weight, price);
 			MyNode<Inventory> myStockNode = new MyNode<Inventory>(newInventory);
